@@ -1,0 +1,473 @@
+{
+  "ok": true,
+  "fps": 30.0,
+  "side_used": "R",
+  "view": {
+    "side_on": false,
+    "ratio": 0.5308429206965857
+  },
+  "detection": {
+    "label": "uncertain",
+    "confidence": 1.0,
+    "checks": {
+      "enough_cycles": true,
+      "steady_tempo": true,
+      "hands_overhead": null,
+      "legs_in_sync": true
+    },
+    "notes": [
+      "6 squat cycles found (need >= 3)",
+      "cycle length 2.0s, variation 0.08",
+      "wrist not reliably tracked, overhead check skipped",
+      "left/right knee angle differ by 7 deg (median)"
+    ]
+  },
+  "warnings": [
+    "Camera does not look side-on (ratio=0.5308429206965857); depth/extension not assessable."
+  ],
+  "reps": [
+    {
+      "rep": 1,
+      "start_frame": 0,
+      "bottom_frame": 37,
+      "end_frame": 67,
+      "duration_s": 2.23,
+      "descent_s": 1.23,
+      "drive_s": 1.0,
+      "min_knee_angle": 29.1,
+      "verdict": "not_proper",
+      "failed_rules": [
+        "start_standing"
+      ],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "start_standing",
+          "status": "fail",
+          "value": 157.31292420561354,
+          "detail": "standing start: knee 176 / hip 157 deg (need >= 165/165)"
+        },
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    },
+    {
+      "rep": 2,
+      "start_frame": 67,
+      "bottom_frame": 105,
+      "end_frame": 135,
+      "duration_s": 2.27,
+      "descent_s": 1.27,
+      "drive_s": 1.0,
+      "min_knee_angle": 48.7,
+      "verdict": "not_assessable",
+      "failed_rules": [],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    },
+    {
+      "rep": 3,
+      "start_frame": 135,
+      "bottom_frame": 171,
+      "end_frame": 200,
+      "duration_s": 2.17,
+      "descent_s": 1.2,
+      "drive_s": 0.97,
+      "min_knee_angle": 35.5,
+      "verdict": "not_assessable",
+      "failed_rules": [],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    },
+    {
+      "rep": 4,
+      "start_frame": 200,
+      "bottom_frame": 229,
+      "end_frame": 251,
+      "duration_s": 1.7,
+      "descent_s": 0.97,
+      "drive_s": 0.73,
+      "min_knee_angle": 54.8,
+      "verdict": "not_assessable",
+      "failed_rules": [],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    },
+    {
+      "rep": 5,
+      "start_frame": 251,
+      "bottom_frame": 287,
+      "end_frame": 311,
+      "duration_s": 2.0,
+      "descent_s": 1.2,
+      "drive_s": 0.8,
+      "min_knee_angle": 55.2,
+      "verdict": "not_assessable",
+      "failed_rules": [],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    },
+    {
+      "rep": 6,
+      "start_frame": 311,
+      "bottom_frame": 343,
+      "end_frame": 367,
+      "duration_s": 1.87,
+      "descent_s": 1.07,
+      "drive_s": 0.8,
+      "min_knee_angle": 56.9,
+      "verdict": "not_assessable",
+      "failed_rules": [],
+      "advisories": [],
+      "not_assessable": [
+        "squat_depth",
+        "full_extension",
+        "throw_reach",
+        "arm_only_throw",
+        "ball_at_chest_bottom",
+        "target_hit",
+        "catch_after_bounce"
+      ],
+      "rules": [
+        {
+          "rule": "squat_depth",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "full_extension",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "throw_reach",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked reliably (likely hidden by the ball)"
+        },
+        {
+          "rule": "arm_only_throw",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "view not side-on (shoulder/torso ratio=0.5308429206965857); not judged"
+        },
+        {
+          "rule": "ball_at_chest_bottom",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "wrist not tracked"
+        },
+        {
+          "rule": "target_hit",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Ball contact with the target is not observable from body keypoints. Carried into Part 2 (IMU on wrist/forearm for release timing; real fix needs ball/target tracking)."
+        },
+        {
+          "rule": "catch_after_bounce",
+          "status": "not_assessable",
+          "value": null,
+          "detail": "Whether the ball bounced before the catch needs ball tracking; pose cannot tell."
+        }
+      ]
+    }
+  ],
+  "reps_detected": 6,
+  "rep_bounds": [
+    {
+      "rep": 1,
+      "start_frame": 0,
+      "bottom_frame": 37,
+      "end_frame": 67
+    },
+    {
+      "rep": 2,
+      "start_frame": 67,
+      "bottom_frame": 105,
+      "end_frame": 135
+    },
+    {
+      "rep": 3,
+      "start_frame": 135,
+      "bottom_frame": 171,
+      "end_frame": 200
+    },
+    {
+      "rep": 4,
+      "start_frame": 200,
+      "bottom_frame": 229,
+      "end_frame": 251
+    },
+    {
+      "rep": 5,
+      "start_frame": 251,
+      "bottom_frame": 287,
+      "end_frame": 311
+    },
+    {
+      "rep": 6,
+      "start_frame": 311,
+      "bottom_frame": 343,
+      "end_frame": 367
+    }
+  ]
+}
