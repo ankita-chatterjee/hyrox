@@ -128,16 +128,7 @@ All values below live in `config.py` under `RULES`. **Sources are secondary (coa
 | `target_hit` | Ball strikes the target | none | Always **not assessable** | HYROX standard: ball must hit the target (men 3.0 m, women 2.7 m; VERIFY). Ball contact is not observable from body keypoints. Carried into Part 2 (wrist IMU for release timing; confirmation needs ball/target tracking). |
 | `catch_after_bounce` | Ball not caught after a bounce and carried straight into a rep | none | Always **not assessable** | Rule described by Centr and RoxLyfe (after a floor drop, stand tall before the next squat). Needs ball tracking. Carried into Part 2. |
 
-Source pages consulted (secondary):
 
-- RitFit: https://www.ritfitsports.com/blogs/article/hyrox-wall-ball
-- Centr: https://shop.hyroxequipment.centr.com/blogs/thewarmup/wall-ball-rulebook-what-judges-watch-every-hyrox-rep
-- BoxRox: https://www.boxrox.com/?p=237612
-- RoxLyfe: https://roxlyfe.com/hyrox-wall-balls-guide
-- Red Bull: https://www.redbull.com/my-en/how-to-train-for-wall-balls
-- PureGym: https://www.puregym.com/us/blog/hyrox-wall-ball
-
-Ball weight and some division details differ between these sources, so no weights are used in the code. Use the official rulebook for the README of record.
 
 ### Other thresholds (also in `config.py`)
 
