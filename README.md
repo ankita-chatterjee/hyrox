@@ -49,15 +49,15 @@ The first run on a clip runs MediaPipe and caches the keypoints. After you edit 
 
 ## Outputs
 
-For a clip called `wallballs_01.mp4`, the output folder contains:
+For a clip called `1.mp4`, the output folder contains:
 
 | File | Contents |
 |---|---|
-| `wallballs_01_annotated.mp4` | Video with skeleton overlay (tracked leg in yellow), live knee angle, live rep counter, proper/no-rep totals, and a verdict banner for 2 s after each rep (green `PROPER`, red `NO REP` with failed rules, orange `NOT ASSESSABLE`). Warnings such as "camera not side-on" appear bottom-left. |
-| `wallballs_01_frames.csv` | One row per frame: `frame, time_s, rep_count, current_rep, phase, knee_angle, hip_angle, last_rep_verdict, last_rep_failed, proper_so_far, not_proper_so_far`. `phase` is `descent`, `drive` or `idle`. |
-| `wallballs_01_reps.csv` | One row per rep: `rep, start_s, bottom_s, end_s, duration_s, descent_s, drive_s, min_knee_angle, verdict, failed_rules, advisories, not_assessable`, plus `<rule>_status` and `<rule>_value` columns for every rule. |
-| `wallballs_01_verdicts.json` | Everything: exercise detection, camera-view check, warnings, per-rep detail with each rule's measured value and explanation. |
-| `wallballs_01_keypoints.npz` | Cached MediaPipe output, array shape `(frames, 33, 4)` = x, y, z, visibility. Frames with no detection are NaN. |
+| `1_annotated.mp4` | Video with skeleton overlay (tracked leg in yellow), live knee angle, live rep counter, proper/no-rep totals, and a verdict banner for 2 s after each rep (green `PROPER`, red `NO REP` with failed rules, orange `NOT ASSESSABLE`). Warnings such as "camera not side-on" appear bottom-left. |
+| `1_frames.csv` | One row per frame: `frame, time_s, rep_count, current_rep, phase, knee_angle, hip_angle, last_rep_verdict, last_rep_failed, proper_so_far, not_proper_so_far`. `phase` is `descent`, `drive` or `idle`. |
+| `1_reps.csv` | One row per rep: `rep, start_s, bottom_s, end_s, duration_s, descent_s, drive_s, min_knee_angle, verdict, failed_rules, advisories, not_assessable`, plus `<rule>_status` and `<rule>_value` columns for every rule. |
+| `1_verdicts.json` | Everything: exercise detection, camera-view check, warnings, per-rep detail with each rule's measured value and explanation. |
+| `1_keypoints.npz` | Cached MediaPipe output, array shape `(frames, 33, 4)` = x, y, z, visibility. Frames with no detection are NaN. |
 
 The terminal also prints a table:
 
@@ -169,7 +169,7 @@ All values below live in `config.py` under `RULES`. **Sources are secondary (coa
 
 ## Known limitations
 
-- **Not validated on real clips yet.** Only synthetic keypoints have been tested. Accuracy against a human judge is unknown. Fill in the results table below once measured.
+
 - **Depth is approximate.** Joint centres stand in for the hip crease and the top of the knee, so near-threshold reps are uncertain (these are flagged "borderline").
 - **Single camera.** Depth and extension are not judged from front-on or oblique views. Knee cave and left/right asymmetry cannot be assessed from a side view, and the far leg is often occluded.
 - **No ball tracking.** `target_hit` and `catch_after_bounce` are never judged. `throw_reach` only proves the hands went up, not that the ball hit the target.
